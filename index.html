@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Garaje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Interfaz Principal</h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#venta" class="nav-link">Venta de Garaje</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#otros" class="nav-link">Otros</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>🏠 Venta de Garaje</h1>
+    </header>
+
+    <main>
+        <div class="filtros-container">
+            <label for="filtroCategoria">Filtrar por categoría:</label>
+            <select id="filtroCategoria" class="filtro-select">
+                <option value="todas">Todas las categorías</option>
+                <option value="Muebles">Muebles</option>
+                <option value="Electrónica">Electrónica</option>
+                <option value="Deportes">Deportes</option>
+                <option value="Hogar">Hogar</option>
+                <option value="Arte y Decoración">Arte y Decoración</option>
+            </select>
+        </div>
+
+        <div class="productos-container" id="productosContainer">
+            <!-- Los productos se cargarán dinámicamente desde JavaScript -->
+        </div>
+
+        <div class="paginacion-container" id="paginacionContainer">
+            <!-- La paginación se cargará dinámicamente desde JavaScript -->
+        </div>
+    </main>
+
+    <!-- Modal para mostrar imagen ampliada -->
+    <div class="modal" id="modal">
+        <span class="cerrar" id="cerrarModal">&times;</span>
+        <img class="modal-contenido" id="imagenModal" src="" alt="Imagen ampliada">
+        <div class="modal-info" id="infoModal">
+            <h2 id="nombreModal"></h2>
+            <p class="precio" id="precioModal"></p>
+            <p class="descripcion" id="descripcionModal"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Información de Contacto</h3>
+                <p>📧 Email: contacto@brysagix.com</p>
+                <p>📞 Teléfono: +57 300 123 4567</p>
+                <p>📍 Dirección: Calle Principal #123, Bogotá</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horarios de Atención</h3>
+                <p>Lunes - Viernes: 9:00 AM - 6:00 PM</p>
+                <p>Sábados: 10:00 AM - 4:00 PM</p>
+                <p>Domingos: Cerrado</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p>📘 Facebook: /BrysagixDesarrollo</p>
+                <p>📷 Instagram: @brysagix_dev</p>
+                <p>🐦 Twitter: @BrysagixDev</p>
+            </div>
+            <div class="footer-section">
+                <h3>Acerca de Nosotros</h3>
+                <p>Desarrollo Brysagix es una empresa dedicada a crear soluciones web innovadoras y de calidad.</p>
+                <p>© 2024 Desarrollo Brysagix. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
